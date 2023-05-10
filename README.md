@@ -1,1 +1,1 @@
-# medicine-summaries-game
+Digivice project
