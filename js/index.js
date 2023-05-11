@@ -22,6 +22,7 @@ async function test(event) {
 }
 
 function digiAPI() {
-    input.addEventListener('change', test);
+    input.addEventListener('submit', test);
+    event.preventDefault();
 }
 window.onload = () => digiAPI();
