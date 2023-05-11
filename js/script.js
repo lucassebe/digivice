@@ -6,8 +6,13 @@ const form = document.querySelector('.form');
 
 const fetchDigimon = async (digimon) => {
     const APIResponse = await fetch(`https://digimon-api.com/api/v1/digimon/${digimon}`);
-    const data = await APIResponse.json();
-    return data;
+    if (APIResponse.status === 200) {
+        const data = await APIResponse.json();
+        return data;
+    }
+    else{
+        alert ('Digimon não encontrado!!')
+    }
 }
 const render = async (digimon) => {
 
@@ -20,4 +25,5 @@ const render = async (digimon) => {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     render(input.value);
+    input.value = ''
 });
