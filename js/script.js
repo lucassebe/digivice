@@ -33,6 +33,8 @@ const render = async (digimon) => {
 }
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+    
     render(input.value);
+    
     input.value = ''
 });
