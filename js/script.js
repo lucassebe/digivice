@@ -13,7 +13,7 @@ const fetchDigimon = async (digimon) => {
     else{
         Toastify({
 
-            text: "Digimon não encontrado!",
+            text: `Digimon não encontrado! "${digimon}"`,
             className: "warn",
             style:{
                 background: "linear-gradient(to right, #FF7C60, #FF0000)"
