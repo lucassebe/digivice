@@ -9,7 +9,6 @@ const fetchDigimon = async (digimon) => {
     const data = await APIResponse.json();
     return data;
 }
-fetchDigimon('agumon');
 const render = async (digimon) => {
 
     const data = await fetchDigimon(digimon);
@@ -21,4 +20,4 @@ const render = async (digimon) => {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     render(input.value);
-})
+});
