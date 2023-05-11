@@ -11,7 +11,16 @@ const fetchDigimon = async (digimon) => {
         return data;
     }
     else{
-        alert ('Digimon não encontrado!!')
+        Toastify({
+
+            text: "Digimon não encontrado!",
+            className: "warn",
+            style:{
+                background: "linear-gradient(to right, #FF7C60, #FF0000)"
+            },
+            duration: 3000
+            
+            }).showToast();
     }
 }
 const render = async (digimon) => {
