@@ -1,0 +1,25 @@
+{
+  "name": "digivice",
+  "version": "1.0.0",
+  "description": "Digimon card project",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucassebe/digivice.git"
+  },
+  "author": "Lucas Sebe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucassebe/digivice/issues"
+  },
+  "homepage": "https://github.com/lucassebe/digivice#readme",
+  "dependencies": {
+    "toastify-js": "^1.12.0"
+  }
+}
